@@ -31,18 +31,18 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: .77s;
+    transition: .333s;
     backface-visibility: hidden;
     color: orange;
     font-size: 32px;
     text-transform: uppercase;
 }
 .card{
-    transform: translateY(-140px);
+    transform: translateY(-133px);
     margin-left: 3%;
-    height: 277px;
-    width: 277px;
-    perspective: 1000px;
+    height: 257px;
+    width: 257px;
+    perspective: 800px;
 }
 .front{
     background-color: #0E0C4F;
@@ -55,10 +55,10 @@ header{
 }
 @media (max-width: 990px) {
     .card{
-        height: 250px;
-        width: 250px;
+        height: 257px;
+        width: 257px;
         margin: 0 auto;
-        transform: translateY(-125px);
+        transform: translateY(-133px);
     }
 }
                                             /*/CARD*/
