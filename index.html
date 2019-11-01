@@ -9,8 +9,10 @@
    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
    <link rel="stylesheet" href="style.css" >
+   <script async src="main.js"></script>
 </head>
 <body>
+
    <header></header>
 
    <main>
@@ -26,16 +28,66 @@
       </div>
 
       <div class="container">
+
          <div class="cv"><!--FLEX-->
             <div class = "cv-item">
+
                <div class="block__img">
-                  <img src = "mg/IMG_7632.JPG" alt = "">
-                  <p><b>Email:</b> &nbsp; selieznov.i.s@gmail.com</p>
-                  <p><b>Cell:</b> &nbsp;+380996007752</p>
-                  <p><b>Date of birth:</b> <br> 21.07.1997</p>
+                  <img src = "mg/IMG_7632.JPG" title="Ilya Selieznov">
+
+                  <div class="mail__to">
+
+                     <p><b>Email:</b>
+
+                        <a href = "mailto:selieznov.i.s@gmail.com">
+                           <input type="text"
+                                  value="selieznov.i.s@gmail.com"
+                                  id="myInput"
+                                  placeholder="selieznov.i.s@gmail.com"></a>
+                        <button class="copy_text_button" onclick="myFunction()">Copy </button>
+                     </p>
+                  </div>
+
+                  <div class="Cell_phone">
+
+                     <p><b>Cell phone:</b>
+
+
+                        <input type="text"
+                               value="+380996007752"
+                               id="myInputNumber"
+                               placeholder="+380996007752">
+                        <button class="copy_number_button" onclick="myFunction2()">Copy</button>
+                     </p>
+                  </div>
+                  <div class="Cell_Skype">
+
+                     <p><b>Skype:</b>
+
+
+                        <input type="text"
+                               value="esenin1953"
+                               id="myInputSkype"
+                               placeholder="esenin1953">
+                        <button class="copy_Skype_button" onclick="myFunctionSkype()">Copy</button>
+                     </p>
+                  </div>
+                  <div class="relevantDate">
+                     <p><b>Date of birth:</b> 21.07.1997
+                     <script>var d = new Date();
+                     document.write("&ensp;" + "(" + (d.getFullYear() - 1997) + " age)");</script></p>
+                  </div>
+                  <a class="pdf_a" href = "pdf/CV.pdf" target="_blank">
+                     <div class="pdf">
+
+                           <div class="pdf_flex wrap__pdf"></div>
+                           <div class="pdf_flex text__pdf">Download PDF</div>
+
+                     </div>
+                  </a>
                </div>
             </div>
-            <div class = "cv-item">
+            <div class = "cv-item cv__text-item">
                <h3>General Information</h3>
                Good communicator and problem solver. In addition, responsible, quality focused and hard-working person. Intends to gain new experience and development in this direction.
                <h3>Experience</h3>
