@@ -3,160 +3,176 @@
 <head>
    <meta charset = "UTF-8">
    <title>CV</title>
-   <meta name="viewport" content="width=device-width,initial-scale=1">
-   <link rel="shortcut icon" type="image/x-icon" href="mg/icon/icon.png">
-   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
-   <link rel="stylesheet" href="style.css" >
-   <script async src="main.js"></script>
+   <meta content = "width=device-width,initial-scale=1" name = "viewport">
+   <link href = "mg/icon/icon.png" rel = "shortcut icon" type = "image/x-icon">
+   <link href = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+   <link href = "https://fonts.googleapis.com/css?family=Lato&display=swap" rel = "stylesheet">
+   <link href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" rel = "stylesheet">
+   <link href = "style.css" rel = "stylesheet">
+   <script async src = "main.js"></script>
 </head>
 <body>
 
-   <header></header>
+<header></header>
 
-   <main>
-      <div class="card">
-         <a class="href_anchor" href="https://mrselieznov.github.io/myPortfolio/" target="">
-            <div class="front">
-               <div class="reference">
-                  <b>PORTFOLIO</b>
+<main>
+   <div class = "card">
+      <a class = "href_anchor" href = "https://mrselieznov.github.io/myPortfolio/" target = "">
+         <div class = "front">
+            <div class = "reference">
+               <b>PORTFOLIO</b>
+            </div>
+         </div>
+         <div class = "back"></div>
+      </a>
+   </div>
+
+   <div class = "container">
+
+      <div class = "cv"><!--FLEX-->
+         <div class = "cv-item">
+
+            <div class = "block__img">
+               <img src = "mg/IMG_7632.JPG" title = "Ilya Selieznov">
+
+               <div class = "mail__to">
+
+                  <p><b>Email:</b>
+
+                     <a href = "mailto:selieznov.i.s@gmail.com">
+                        <input id = "myInput"
+                               placeholder = "selieznov.i.s@gmail.com"
+                               type = "text"
+                               value = "selieznov.i.s@gmail.com"></a>
+                     <button class = "copy_text_button" onclick = "myFunction()">Copy</button>
+                  </p>
+               </div>
+
+               <div class = "Cell_phone">
+
+                  <p><b>Cell phone:</b>
+
+
+                     <input id = "myInputNumber"
+                            placeholder = "+380996007752"
+                            type = "text"
+                            value = "+380996007752">
+                     <button class = "copy_number_button" onclick = "myFunction2()">Copy</button>
+                  </p>
+               </div>
+               <div class = "Cell_Skype">
+
+                  <p><b>Skype:</b>
+
+
+                     <input id = "myInputSkype"
+                            placeholder = "esenin1953"
+                            type = "text"
+                            value = "esenin1953">
+                     <button class = "copy_Skype_button" onclick = "myFunctionSkype()">Copy</button>
+                  </p>
+               </div>
+               <div class = "relevantDate">
+                  <p><b>Date of birth:</b> 21.07.1997
+                     <script>
+                         let now = new Date(),
+                             bd = new Date("1997-07-21"),
+                             mAge = now.getFullYear() - bd.getFullYear();
+                         document.write("&ensp;" + "(" + mAge + " years old)");</script>
+                  </p>
+               </div>
+               <a class = "pdf_a" href = "pdf/Selieznov%20Ilya.pdf" target = "_blank">
+                  <div class = "pdf">
+
+                     <div class = "pdf_flex wrap__pdf"></div>
+                     <div class = "pdf_flex text__pdf">Download PDF</div>
+
+                  </div>
+               </a>
+            </div>
+         </div>
+         <div class = "cv-item cv__text-item">
+            <h3>General Information</h3>
+            Good communicator and problem solver.
+            In addition, motivated and responsible, quality focused and hard-working
+            person. Intend to gain new experience and relevant knowledge in
+            development.
+            <br>
+            <h3>Experience</h3>
+            Experience in solving problems with the help of pet's projects for selfeducation, passed EPAM's frontend development learning course,
+            have had few months commercial experience as a markup designer in Aweb
+            Systems and several freelance projects up to date.
+            <div class = "summery">
+               <br>
+               <div class = "s-header"> <!--FLEX-->
+                  <div class = "language">Technologies</div>
+                  <div class = "tools">Tools</div>
+               </div>
+               <div class = "container-s__body"><!--FLEX-->
+                  <div class = "c-s_b">
+                     <ul>
+                        <li>JS</li>
+                        <li>CSS, SASS</li>
+                        <li>HTML</li>
+
+                     </ul>
+                  </div>
+                  <div class = "c-s_b">
+                     <ul>
+                        <li>GIT</li>
+                        <li>Photoshop</li>
+                     </ul>
+                  </div>
                </div>
             </div>
-            <div class="back"></div>
-         </a>
+            <div class = "other">
+               <br>
+               <h3>Roles:</h3>
+               <p> Frontend developer</p>
+               <br>
+               <h3>Language skills:</h3>
+               <p>English - B1 </p>
+               <br>
+               <h3>Education</h3>
+               <ul>
+                  <li>Kharkiv National University of Radio Electronics - Bachelor
+                     2016-2019
+                     Biomedical Engineering Department
+
+                  </li>
+                  <br>
+                  <li>
+                     Kharkiv National University of Radio Electronics - Master
+                     2019-2021
+                     Biomedical Engineering Department
+                  </li>
+               </ul>
+            </div>
+
+         </div>
       </div>
+   </div>
+</main>
 
-      <div class="container">
-
-         <div class="cv"><!--FLEX-->
-            <div class = "cv-item">
-
-               <div class="block__img">
-                  <img src = "mg/IMG_7632.JPG" title="Ilya Selieznov">
-
-                  <div class="mail__to">
-
-                     <p><b>Email:</b>
-
-                        <a href = "mailto:selieznov.i.s@gmail.com">
-                           <input type="text"
-                                  value="selieznov.i.s@gmail.com"
-                                  id="myInput"
-                                  placeholder="selieznov.i.s@gmail.com"></a>
-                        <button class="copy_text_button" onclick="myFunction()">Copy </button>
-                     </p>
-                  </div>
-
-                  <div class="Cell_phone">
-
-                     <p><b>Cell phone:</b>
-
-
-                        <input type="text"
-                               value="+380996007752"
-                               id="myInputNumber"
-                               placeholder="+380996007752">
-                        <button class="copy_number_button" onclick="myFunction2()">Copy</button>
-                     </p>
-                  </div>
-                  <div class="Cell_Skype">
-
-                     <p><b>Skype:</b>
-
-
-                        <input type="text"
-                               value="esenin1953"
-                               id="myInputSkype"
-                               placeholder="esenin1953">
-                        <button class="copy_Skype_button" onclick="myFunctionSkype()">Copy</button>
-                     </p>
-                  </div>
-                  <div class="relevantDate">
-                     <p><b>Date of birth:</b> 21.07.1997
-                     <script>var d = new Date();
-                     document.write("&ensp;" + "(" + (d.getFullYear() - 1997) + " age)");</script></p>
-                  </div>
-                  <a class="pdf_a" href = "pdf/CV.pdf" target="_blank">
-                     <div class="pdf">
-
-                           <div class="pdf_flex wrap__pdf"></div>
-                           <div class="pdf_flex text__pdf">Download PDF</div>
-
-                     </div>
-                  </a>
-               </div>
+<footer>
+   <div class = "footer">
+      <div class = "container">
+         <div class = "row">
+            <div class = "col-4">
+               <p class = "footer__name">Илья Селезнев<br></p>
+               <p>&copy; HTML верстка.</p>
             </div>
-            <div class = "cv-item cv__text-item">
-               <h3>General Information</h3>
-               Good communicator and problem solver. In addition, responsible, quality focused and hard-working person. Intends to gain new experience and development in this direction.
-               <h3>Experience</h3>
-               Experience in solving problems for self-education, found on the network in different sources.
-               <div class="summery">
-                  <div class="s-header"> <!--FLEX-->
-                     <div class="language">Technologies</div>
-                     <div class="tools">Tools</div>
-                  </div>
-                  <div class="container-s__body"><!--FLEX-->
-                     <div class = "c-s_b">
-                        <ul>
-                           <li>JS</li>
-                           <li>CSS, SASS</li>
-                           <li>HTML</li>
 
-                        </ul>
-                     </div>
-                     <div class = "c-s_b">
-                        <ul>
-                           <li>GIT</li>
-                           <li>Photoshop</li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-               <div class="other">
-                  <h3>Roles:</h3>
-                  <p> Frontend developer</p>
-                  <h3>Language skills:</h3>
-                  <p>English - B1 </p>
-                  <h3>Education</h3>
-                  <ul>
-                     <li>Kharkiv National University of Radio Electronics - Bachelor
-                        2016-2019
-                        Biomedical Engineering Department
-
-                     </li>
-                     <li>
-                        Kharkiv National University of Radio Electronics - Master
-                        2019-2021
-                        Biomedical Engineering Department
-                     </li>
-                  </ul>
-               </div>
-
+            <div class = "col-4">
+               <div><a class = "button" href = "https://t.me/mrSelieznov" target = "_blank">
+                  Связаться в Telegram
+               </a></div>
+               <br>
+               <p>Для активной коммуникации, сотрудничества и остальным вопросам, всегда рад.</p>
             </div>
          </div>
       </div>
-   </main>
-
-   <footer>
-      <div class="footer">
-         <div class="container">
-            <div class="row">
-               <div class="col-4">
-                  <p class="footer__name">Илья Селезнев<br></p>
-                  <p>&copy; HTML верстка.</p>
-               </div>
-
-               <div class="col-4">
-                  <div><a href="https://t.me/mrSelieznov" class="button" target="_blank">
-                     Связаться в Telegram
-                  </a></div><br>
-                  <p>Для активной коммуникации, сотрудничества и остальным вопросам, всегда рад.</p>
-               </div>
-            </div>
-         </div>
-      </div>
-   </footer>
+   </div>
+</footer>
 </body>
 </html>
